@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My API Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script 
+src="https://kit.fontawesome.com/ff0b4cb494.js" crossorigin="anonymous">
+</script>
+</head>
+<body>
+  <header>
+    <h2>My API Store</h2>
+    <button class="btn">Sign Up</button>
+  </header>  
+  <main>
+    <!--highlight section--> 
+    <section id="highlight-id">
+      <h2>Apple Iphone 13 Pro Max</h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+      <div id="click-now-button">
+        <button class="btn">Buy Now</button>
+      </div>
+
+    </section>
+  
+      <!-- cover image section -->
+       <section id="cover-image-id">
+        <img src="cover-image.png" alt="Iphone image" />
+       </section>
+<!-- search section -->
+ <section id="search-section">
+  <h2>Search Your Phone</h2>
+  <div id="search-container">
+  <div id="search-bar">
+    <i class=" fa fa-solid fa-magnifying-glass"></i>
+    <input id="search.input.field" type="text" placeholder="Search Your Phone" />
+  </div>
+  <div id="search-button">
+    <button onclick="handleSearch()" class="btn">Search</button>
+  </div>
+ </div>
+ </section>
+ <!-- loading-section -->
+<section id="loading-section">
+  <!-- this is the loading animation -->
+  <div  id="loader-animation" class="loader hidden"></div> 
+
+</section>
+<!-- card section -->
+ <section id="card-section">
+  <!-- card -->
+  <div class="card">
+    <div class="card-image">
+      <img src="iphone-img5.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 11 128GB Green (MWLK2)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+  <!-- card -->
+  <div class="card">
+    <div class="card-image">
+      <img src="iphone-img.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 12 128GB Green (MGJF3/MGHG3)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+  <!-- card -->
+  <div class="card">
+    <div class="card-image">
+      <img src="iphone-img.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 12 Pro 256Gb Silver (MGMQ3/MGLU3)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+<div class="card">
+    <div class="card-image">
+      <img src="iphone-img2.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 12 Pro 256Gb Graphite (MGMP3/MGLT3)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="iphone-img3.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+  <div class="card">
+    <div class="card-image">
+      <img src="iphone-img4.png" alt="iphone img" />
+    </div>
+    <h3 class="card-title">Apple iPhone 12 64GB Product Red (MGJ73/MGH83)</h3>
+    <p class="card-description">
+      There are many variations of passages of available, but the majority have suffered
+    </p>
+    <div class="card-price">
+      <span>$</span>
+      <span id="card-item-price">999</span>
+    </div>
+    <div class="card-button">
+      <button class="btn">Show Details</button>
+    </div>
+
+  </div>
+ </section>
+ 
+    </main>
+<!-- footer section -->
+<footer>
+  
+  <!-- Footer section 1 -->
+  <section id = "footer_one">
+     <div>
+          <h2 style="color:#070707; font-size: 45px; margin-bottom: 10px">My API Store</h2>
+          <p style="color:grey; font-size: 18px; font-weight: 600">
+            Learn How to use API Store
+          </p>
+        </div>
+
+        <div id="footer-social-icons">
+          <a href="">
+            <img src="./image/facebook (1).png" alt="facebook" />
+          </a>
+          <a href="">
+            <img src="./image/twitter (1).png" alt="x" />
+          </a>
+          <a href="">
+            <img src="./image/instagram.png" alt="instagram" />
+          </a>
+          <button class="btn">Join Premium</button>
+        </div>
+
+  </section>
+
+<!-- horizontal line -->
+      <section id="horizontal-line"></section>
+
+      <!-- footer Nav -->
+      <section id="footer-nav">
+        <div>
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div>
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div style="text-align: left">
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div style="text-align: right">
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+      </section>
+      
+
+</footer>
+    
+  
+  <script src="./store.js"></script>
+  
+</body>
+</html>
